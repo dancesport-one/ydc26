@@ -157,6 +157,10 @@ $(document).ready(function(){
         InitContent(2, 1);
     } );
     listennr[liste]=2; liste++;
+    $(".divbox").eq(liste).load("erg.htm", function() {
+        InitContent(3, 2);
+    } );
+    listennr[liste]=3; liste++;
     $( window ).resize( function() {
         if ($( window ).width()<=600) {
             /* Skatingtabelle */
@@ -235,6 +239,21 @@ document.write("<span id='z2'></span></div>");
 <div class="divbox">Die Daten konnten nicht dynamisch eingef&uuml;gt werden. Bitte verwenden Sie den folgenden Button, um die 
 Information anzusehen:<br> 
 <center><a href="starter.htm"><div class="compbutton" id="h2">Startliste</div></a></center>
+Mit Firefox k&ouml;nnen Sie die Daten auch offline direkt ansehen.
+</div>
+</div>
+<noscript>
+<center><a href="erg.htm"><div class="compbutton" id="h3">Ergebnisliste</div></a></center>
+</noscript>
+<script>
+document.write("<div class='groupheader' id='h3'>");
+document.write("<span class='expander'>+</span> Ergebnisliste");
+document.write("<span id='z3'></span></div>");
+</script>
+<div class="tdbox" id="t3">
+<div class="divbox">Die Daten konnten nicht dynamisch eingef&uuml;gt werden. Bitte verwenden Sie den folgenden Button, um die 
+Information anzusehen:<br> 
+<center><a href="erg.htm"><div class="compbutton" id="h3">Ergebnisliste</div></a></center>
 Mit Firefox k&ouml;nnen Sie die Daten auch offline direkt ansehen.
 </div>
 </div>

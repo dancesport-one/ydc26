@@ -153,10 +153,22 @@ $(document).ready(function(){
         InitContent(1, 0);
     } );
     listennr[liste]=1; liste++;
-    $(".divbox").eq(liste).load("starter.htm", function() {
-        InitContent(2, 1);
+    $(".divbox").eq(liste).load("erg.htm", function() {
+        InitContent(3, 1);
     } );
-    listennr[liste]=2; liste++;
+    listennr[liste]=3; liste++;
+    $(".divbox").eq(liste).load("ergwert.htm", function() {
+        InitContent(4, 2);
+    } );
+    listennr[liste]=4; liste++;
+    $(".divbox").eq(liste).load("wert_er.htm", function() {
+        InitContent(5, 3);
+    } );
+    listennr[liste]=5; liste++;
+    $(".divbox").eq(liste).load("tabges.htm", function() {
+        InitContent(7, 4);
+    } );
+    listennr[liste]=7; liste++;
     $( window ).resize( function() {
         if ($( window ).width()<=600) {
             /* Skatingtabelle */
@@ -224,17 +236,62 @@ Mit Firefox k&ouml;nnen Sie die Daten auch offline direkt ansehen.
 </div>
 </div>
 <noscript>
-<center><a href="starter.htm"><div class="compbutton" id="h2">Startliste</div></a></center>
+<center><a href="erg.htm"><div class="compbutton" id="h3">Ergebnisliste</div></a></center>
 </noscript>
 <script>
-document.write("<div class='groupheader' id='h2'>");
-document.write("<span class='expander'>+</span> Startliste");
-document.write("<span id='z2'></span></div>");
+document.write("<div class='groupheader' id='h3'>");
+document.write("<span class='expander'>+</span> Ergebnisliste");
+document.write("<span id='z3'></span></div>");
 </script>
-<div class="tdbox" id="t2">
+<div class="tdbox" id="t3">
 <div class="divbox">Die Daten konnten nicht dynamisch eingef&uuml;gt werden. Bitte verwenden Sie den folgenden Button, um die 
 Information anzusehen:<br> 
-<center><a href="starter.htm"><div class="compbutton" id="h2">Startliste</div></a></center>
+<center><a href="erg.htm"><div class="compbutton" id="h3">Ergebnisliste</div></a></center>
+Mit Firefox k&ouml;nnen Sie die Daten auch offline direkt ansehen.
+</div>
+</div>
+<noscript>
+<center><a href="ergwert.htm"><div class="compbutton" id="h4">Ergebnis mit Wertung</div></a></center>
+</noscript>
+<script>
+document.write("<div class='groupheader' id='h4'>");
+document.write("<span class='expander'>+</span> Ergebnis mit Wertung");
+document.write("<span id='z4'></span></div>");
+</script>
+<div class="tdbox" id="t4">
+<div class="divbox">Die Daten konnten nicht dynamisch eingef&uuml;gt werden. Bitte verwenden Sie den folgenden Button, um die 
+Information anzusehen:<br> 
+<center><a href="ergwert.htm"><div class="compbutton" id="h4">Ergebnis mit Wertung</div></a></center>
+Mit Firefox k&ouml;nnen Sie die Daten auch offline direkt ansehen.
+</div>
+</div>
+<noscript>
+<center><a href="wert_er.htm"><div class="compbutton" id="h5">Endrundentabelle</div></a></center>
+</noscript>
+<script>
+document.write("<div class='groupheader' id='h5'>");
+document.write("<span class='expander'>+</span> Endrundentabelle");
+document.write("<span id='z5'></span></div>");
+</script>
+<div class="tdbox" id="t5">
+<div class="divbox">Die Daten konnten nicht dynamisch eingef&uuml;gt werden. Bitte verwenden Sie den folgenden Button, um die 
+Information anzusehen:<br> 
+<center><a href="wert_er.htm"><div class="compbutton" id="h5">Endrundentabelle</div></a></center>
+Mit Firefox k&ouml;nnen Sie die Daten auch offline direkt ansehen.
+</div>
+</div>
+<noscript>
+<center><a href="tabges.htm"><div class="compbutton" id="h7">Wertungstabelle Gesamt</div></a></center>
+</noscript>
+<script>
+document.write("<div class='groupheader' id='h7'>");
+document.write("<span class='expander'>+</span> Wertungstabelle Gesamt");
+document.write("<span id='z7'></span></div>");
+</script>
+<div class="tdbox" id="t7">
+<div class="divbox">Die Daten konnten nicht dynamisch eingef&uuml;gt werden. Bitte verwenden Sie den folgenden Button, um die 
+Information anzusehen:<br> 
+<center><a href="tabges.htm"><div class="compbutton" id="h7">Wertungstabelle Gesamt</div></a></center>
 Mit Firefox k&ouml;nnen Sie die Daten auch offline direkt ansehen.
 </div>
 </div>
